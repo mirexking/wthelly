@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Date Surprise ❤️</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+  <script type="text/javascript">
+    emailjs.init("aC7tvdFWa6lNfqBxz");
+  </script>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1 id="title">Hoćeš na dejt sa mnom? ❤️</h1>
+
+    <div class="buttons">
+      <button id="yesBtn">Da 😍</button>
+      <button id="noBtn">Ne 😢</button>
+    </div>
+
+    <div id="step2" class="hidden">
+      <h2>Auuu neočekivano 😄</h2>
+      <h3>Šta biraš?</h3>
+
+      <div class="options">
+        <button onclick="chooseOption('Piće')">Piće 🍹</button>
+        <button onclick="chooseOption('Jelo')">Jelo 🍝</button>
+        <button onclick="chooseOption('Oba')">Oba 😎</button>
+      </div>
+    </div>
+
+    <div id="finalMessage" class="hidden">
+      <h1>Važi ❤️</h1>
+      <p>Budi spremna u 8, kupim te 😄</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
